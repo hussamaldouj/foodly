@@ -436,7 +436,7 @@ label.active{
 }
 @media only screen and (max-width: 991px){
    .tab > div{
-      margin-left: 15px;
+      margin-left: 0px;
    }
 }
 @media only screen and (max-width: 768px){
@@ -445,7 +445,7 @@ label.active{
       width: 92px;
       display: grid;
       gap: 5px;
-      margin-left: 20px;
+      margin-left: 10px;
       flex-direction: column;
       align-items: center;
       justify-items: center;
@@ -459,7 +459,7 @@ label.active{
       width: auto;
    }
    .tab > div{
-      width: 350px;
+      width: auto;
       border: 0;
       opacity: 1;
       position: relative;
