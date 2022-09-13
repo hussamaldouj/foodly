@@ -296,7 +296,7 @@ a:hover,a.active{
 /* start col */
 .col{
    padding-left: 55px;
-   padding-right: 25px;
+   padding-right: 55px;
    align-items: center;
 }
 /* end col */
@@ -358,9 +358,15 @@ a:hover,a.active{
 h1 span{
    color: #f37354;
 }
+.row:nth-child(4){
+   height: 600px;
+   align-items: flex-start;
+}
 .tabs{
    display: flex;
+   flex-wrap: wrap;
    align-items: flex-end;
+   justify-content: center;
    width: 100%;
    gap: 5px;
    margin: 0px 0px;
@@ -385,16 +391,17 @@ h1 span{
 
 label i{
    margin-right: 10px;
-   color: #c44b2d;
+   color: #000;
    font-size: 22px;
 }
 label.menu{
-   height: 69px;
-   width: 92px;
+   height: 48px;
+   width: 145px;
    display: flex;
    align-items: center;
+   flex-direction: row;
    justify-content: space-evenly;
-   flex-direction: column;
+
 }
 .menu{
    background: #fff;
@@ -409,8 +416,12 @@ label.active{
    background: #f37354;
 }
 .tab{
-   position: absolute;
+   position: relative;
    clear: both;
+   background: #cccf0a;
+}
+.tab{
+   width: 100%;
 }
 .tab > div{
    width: auto;
@@ -439,18 +450,14 @@ label.active{
       margin-left: 0px;
    }
 }
+
 @media only screen and (max-width: 768px){
    label.menu {
-      height: 69px;
-      width: 92px;
-      display: grid;
-      gap: 5px;
-      margin-left: 10px;
-      flex-direction: column;
-      align-items: center;
-      justify-items: center;
+      display: none;
   }
-  
+  .row:nth-child(4){
+   height: auto;
+}
    .tab{
       position: relative;
    }
@@ -470,5 +477,74 @@ label.active{
       border-bottom: 2px solid blueviolet;
       padding-bottom: 0.5em;
    }
+   div.row{
+      gap: 40px;
+   }
 } 
+.center{
+   position: absolute;
+   top:100px;
+   left: 50px;
+}
+.cont-card{
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+.cont-card img{
+   transform: translate(10px, 10px);
+   position: absolute;
+   z-index: 1;
+   top: -35%;
+   -webkit-filter: drop-shadow(0 8px 19px rgba(0,0,0,0.3));
+}
+.col-card {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 60px;
+   align-items: center;
+}
+.card{
+   position: relative;
+   width: 240px;
+   height: 240px;
+   background: #fff;
+   border-radius: 10px;
+   display: flex;
+   align-items: flex-end;
+   overflow: hidden;
+}
+.content{
+   width: 100%;
+   height: 240px;
+   padding: 0 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+.content p{
+   font-size: 0.8rem;
+   color:#c44b2d;
+}
+.detalils{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.detalils span{
+   color:#ffd707;
+}
+.content button{
+   width: 100%;
+   height: 45px;
+   outline: none;
+   border: none;
+   background:#f37354;
+   cursor: pointer;
+   color: #fff;
+   font-weight: 500;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
 
