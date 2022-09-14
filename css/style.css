@@ -578,3 +578,104 @@ label.active{
    border-radius: 5px;
    margin-bottom: 10px;
 }
+.container-food{
+   position: absolute;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img{
+   border-top-left-radius: 50px;
+   border-top-right-radius:5px ;
+   width: 249px;
+   height: 200px;
+   transition: 0.3s;
+}
+.one{
+   background: url("/img/blog-1.jpg") center / cover;
+   z-index: -1;
+   clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
+   transform: translateX(125px);
+}
+.tow{
+   background: url("/img/blog-1.jpg") center / cover;
+   clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
+   transform: translateX(-125px);
+}
+.three{
+   background: url("/img/blog-2.jpg") center / cover;
+   z-index: -1;
+   clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
+   transform: translateX(125px);
+}
+.four{
+   background: url("/img/blog-2.jpg") center / cover;
+   clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
+   transform: translateX(-125px);
+}
+.five{
+   background: url("/img/blog-3.jpg") center / cover;
+   z-index: -1;
+   clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
+   transform: translateX(125px);
+}
+.six{
+   background: url("/img/blog-3.jpg") center / cover;
+   clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
+   transform: translateX(-125px);
+}
+.text{
+   display: flex;
+   position: absolute;
+   opacity: 0;
+
+   height: 70px;
+   width: auto;
+   flex-direction: column;
+   justify-content: center;
+   background:#fdf7ee;
+   transition: 0.2s ease;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   overflow: hidden;
+   padding: 1rem 0.5rem;
+}
+.text p{
+   color: #bfbfbf;
+   margin: 0.5rem 0;
+}
+.container-food:hover .one,.container-food:hover .three,.container-food:hover .five{
+   transform: translateX(100px);
+}
+.container-food:hover .tow,.container-food:hover .four,.container-food:hover .six{
+   transform: translateX(-100px);
+}
+.container-food:hover .text{
+  opacity: 1;
+  left: 20%;
+}
+.text h4{
+   color: #f37354;
+   margin: 0% auto;
+}
+.text h5 i{
+   color: #f37354;
+   margin-left: 5px;
+}
+.text h5 button{
+   background: #f37354;
+   border: none;
+   border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   margin-left: 5px;
+   cursor: pointer;
+}
+.text h5 button i{
+   color: #fff;
+}
+@media only screen and (max-width: 768px){
+   .container-food{
+      position: relative;
+   }
+}
