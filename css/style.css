@@ -348,7 +348,23 @@ a:hover,a.active{
    margin-top: 30px;
    border-radius: 3px;
    }
-.btn-more a{
+   .btn-Down{
+      float: left;
+      background-color: #f37354;
+      width: 120px;
+      height: 25px;
+      padding-top: 7px;
+      font-size: 16px;
+      text-align: center;
+      margin-right: 5px !important;
+      margin-bottom: 12px;
+      margin-top: 30px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 3px;
+      }
+.btn-more a,.btn-Down a{
    text-decoration: none;
    color: #fdf7ee;
 }
@@ -357,6 +373,21 @@ a:hover,a.active{
 }
 h1 span{
    color: #f37354;
+}
+.container .row .col-6 p:nth-child(4) span{
+   margin-right: 18px;
+   color: #f37354;
+   filter: drop-shadow(2px 4px 6px #f37354);
+}
+.container .row .col-6 p:nth-child(5) span{
+   margin-right: 15px;
+   color: #54b9f3;
+   filter: drop-shadow(2px 4px 6px #54b9f3);
+}
+.container .row .col-6 p:nth-child(6) span{
+   margin-right: 20px;
+   color: #f73c3c;
+   filter: drop-shadow(2px 4px 6px #f73c3c);
 }
 .row:nth-child(4){
    height: 600px;
@@ -547,4 +578,3 @@ label.active{
    border-radius: 5px;
    margin-bottom: 10px;
 }
-
