@@ -332,7 +332,7 @@ a:hover,a.active{
 }   
 /* end column 3 */
 .col-6 img{
-   width: 75%;
+   width: 100%;
    height: 100%;
 }
 .btn-more{
@@ -348,22 +348,22 @@ a:hover,a.active{
    margin-top: 30px;
    border-radius: 3px;
    }
-   .btn-Down{
-      float: left;
-      background-color: #f37354;
-      width: 120px;
-      height: 25px;
-      padding-top: 7px;
-      font-size: 16px;
-      text-align: center;
-      margin-right: 5px !important;
-      margin-bottom: 12px;
-      margin-top: 30px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 3px;
-      }
+.btn-Down{
+   float: left;
+   background-color: #f37354;
+   width: 150px;
+   height: 25px;
+   padding-top: 7px;
+   font-size: 16px;
+   text-align: center;
+   margin-right: 5px !important;
+   margin-bottom: 12px;
+   margin-top: 30px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 3px;
+   }
 .btn-more a,.btn-Down a{
    text-decoration: none;
    color: #fdf7ee;
@@ -578,9 +578,14 @@ label.active{
    border-radius: 5px;
    margin-bottom: 10px;
 }
+#TopFood{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+}
 .container-food{
-   position: absolute;
-   overflow: hidden;
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -588,7 +593,7 @@ label.active{
 .img{
    border-top-left-radius: 50px;
    border-top-right-radius:5px ;
-   width: 249px;
+   width: 200px;
    height: 200px;
    transition: 0.3s;
 }
@@ -596,40 +601,39 @@ label.active{
    background: url("/img/blog-1.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
-   transform: translateX(125px);
+   transform: translateX(100px);
 }
 .tow{
    background: url("/img/blog-1.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
-   transform: translateX(-125px);
+   transform: translateX(-100px);
 }
 .three{
    background: url("/img/blog-2.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
-   transform: translateX(125px);
+   transform: translateX(100px);
 }
 .four{
    background: url("/img/blog-2.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
-   transform: translateX(-125px);
+   transform: translateX(-100px);
 }
 .five{
    background: url("/img/blog-3.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
-   transform: translateX(125px);
+   transform: translateX(100px);
 }
 .six{
    background: url("/img/blog-3.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
-   transform: translateX(-125px);
+   transform: translateX(-100px);
 }
 .text{
    display: flex;
    position: absolute;
    opacity: 0;
-
    height: 70px;
    width: auto;
    flex-direction: column;
@@ -645,14 +649,14 @@ label.active{
    margin: 0.5rem 0;
 }
 .container-food:hover .one,.container-food:hover .three,.container-food:hover .five{
-   transform: translateX(100px);
+   transform: translateX(75px);
 }
 .container-food:hover .tow,.container-food:hover .four,.container-food:hover .six{
-   transform: translateX(-100px);
+   transform: translateX(-75px);
 }
 .container-food:hover .text{
   opacity: 1;
-  left: 20%;
+  left: 18%;
 }
 .text h4{
    color: #f37354;
