@@ -389,14 +389,11 @@ h1 span{
    color: #f73c3c;
    filter: drop-shadow(2px 4px 6px #f73c3c);
 }
-.row:nth-child(4){
-   height: 600px;
-   align-items: flex-start;
-}
+
 .tabs{
    display: flex;
    flex-wrap: wrap;
-   align-items: flex-end;
+   align-items: center;
    justify-content: center;
    width: 100%;
    gap: 5px;
@@ -417,7 +414,7 @@ h1 span{
    cursor: pointer;
    margin-right: 10px;
    margin-bottom: 10px;
-   transition: background-color 0.3s;
+   transition: background-color 0.8s ease-out;
 }
 
 label i{
@@ -449,21 +446,19 @@ label.active{
 .tab{
    position: relative;
    clear: both;
-   background: #cccf0a;
 }
 .tab{
    width: 100%;
 }
 .tab > div{
    width: auto;
-   position: absolute;
+   position: relative;
    border: 2px solid brown;
    padding: 20px 30px 40px;
    line-height: 1.4em;
-   opacity: 0;
+   display: none;
    transform: rotateX(-20deg);
    transform-origin: top center;
-   transition: transform 1s;
    z-index: 0;
 }
 #tab-nav-1:checked ~ .tab > div:nth-of-type(1),
@@ -473,7 +468,8 @@ label.active{
 #tab-nav-5:checked ~ .tab > div:nth-of-type(5),
 #tab-nav-6:checked ~ .tab > div:nth-of-type(6){
    transform: rotate(0);
-   opacity: 1;
+   transition: transform 1s , display 1s;
+   display: block;
    z-index: 1;
 }
 @media only screen and (max-width: 991px){
@@ -481,28 +477,16 @@ label.active{
       margin-left: 0px;
    }
 }
-
 @media only screen and (max-width: 768px){
    label.menu {
       display: none;
   }
-  .row:nth-child(4){
-   height: auto;
-}
-   .tab{
-      position: relative;
-   }
-   .tabs {
-      display: inline-block;
-      width: auto;
-   }
    .tab > div{
       width: auto;
       border: 0;
-      opacity: 1;
+      display: block;
       position: relative;
       transform: none;
-      margin-bottom: 60px;
    }
    .tab > div h3{
       border-bottom: 2px solid blueviolet;
@@ -510,6 +494,9 @@ label.active{
    }
    div.row{
       gap: 40px;
+   }
+   .col-card {
+      flex: 1 1 20%;
    }
 } 
 .center{
@@ -530,9 +517,11 @@ label.active{
    -webkit-filter: drop-shadow(0 8px 19px rgba(0,0,0,0.3));
 }
 .col-card {
-   padding-left: 10px;
-   padding-right: 10px;
+   flex: 1 1 20%;
+   padding-left: 8px;
+   padding-right: 8px;
    padding-top: 60px;
+   padding-bottom: 60px;
    align-items: center;
 }
 .card{
@@ -583,6 +572,16 @@ label.active{
    flex-wrap: wrap;
    gap: 10px;
    justify-content: center;
+}
+@media only screen and (max-width: 1200px){
+   .col-card {
+      flex: 1 1 31%;
+   }
+}
+@media only screen and (min-width: 551px){
+   .tab div.row{
+      flex-wrap: wrap;
+   }
 }
 .container-food{
    position: relative;
