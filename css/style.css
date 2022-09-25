@@ -365,7 +365,7 @@ a:hover,a.active{
    border-bottom-left-radius: 20px;
    border-bottom-right-radius: 3px;
    }
-.btn-more a,.btn-Down a{
+.btn-more a,.btn-Down a,.btn-search a{
    text-decoration: none;
    color: #fdf7ee;
 }
@@ -885,26 +885,70 @@ input[type="checkbox"]{
 @media only screen and (max-width: 768px){
   .inner-part {
     display: flex!important;
-    width: 90%;
-    padding: 0 0px;
-    flex-wrap: wrap!important;
+    width: 60%;
   }
   .inner-part .img {
     height: 100%!important;
     width: 100%!important;
     flex: 1 0 auto!important;
   }
-  .contents .text {
-    text-align: justify!important;
+  .contents .title {
+   font-size: 12px;
+   font-weight: 200;
+   margin-bottom: 2px;
   }
+  .contents{
+   padding: 0 0px 0 0px;
+   margin: 0 0px 0 35px;
+}
   .sliders{
     left: calc(18%/2);
   }
 }
 .box-sub{
    display: flex;
-   background: #c15439;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #ec6c4cf3;
    width: 86vw;
    border-radius: 20px;
-   height: 200px;
+   padding: 10px;
 }
+.box-sub div{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.title-sub{
+   color:#fff;
+   font-size: 24px;
+   margin-top: 25px;
+   font-family:cursive;
+}
+.detitle-sub{
+   font-size: 12px;
+   color: #fff;
+   margin-top: 16px;
+}
+.box-sub input{
+   background: rgb(255 255 255);
+   border: none;
+   width: 65vw;
+   border-radius: 50px;
+   height: 10vh;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   padding-left: 15px;
+}
+.btn-search{
+   position: absolute;
+   background-color: rgb(243 115 84);
+   width: 120px;
+   padding: 8px;
+   font-size: 16px;
+   text-align: center;
+   margin-top: 0px;
+   border-radius: 50px;
+   }
