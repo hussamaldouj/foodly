@@ -232,13 +232,13 @@ a.actives{
    display: block;
 }
 ul{
-   position: fixed;
+   position: relative;
    width: 100%;
-   height: 100vh;
-   background: transparent;
+   min-height: 50vh;
+   z-index: 999;
+   background:#cccccc;
    top: 55px;
    left: -100%;
-   padding-inline-start: 0px;
    transition: all 0.5s;
    text-align: center;
 }
@@ -451,10 +451,13 @@ label.active{
 .tab{
    width: 100%;
 }
+.tab div h3{
+   text-align: center;
+   color: #f37354;
+}
 .tab > div{
    width: auto;
    position: relative;
-   border: 2px solid brown;
    padding: 20px 20px 0px;
    line-height: 1.4em;
    display: none;
@@ -884,8 +887,11 @@ input[type="checkbox"]{
 }
 @media only screen and (max-width: 768px){
   .inner-part {
-    display: flex!important;
-    width: 60%;
+   display: flex!important;
+   width: 90%;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
   }
   .inner-part .img {
     height: 100%!important;
@@ -893,14 +899,34 @@ input[type="checkbox"]{
     flex: 1 0 auto!important;
   }
   .contents .title {
+   position: absolute;
    font-size: 12px;
+   background: rgb(255 255 255);
+   padding: 8px;
+   opacity: 0.7;
    font-weight: 200;
-   margin-bottom: 2px;
+   bottom: 3px;
+   color: #000;
+   border-radius: 15px;
+   width: 87%;
   }
   .contents{
+   position: absolute;
+   bottom: 0%;
+   max-width: 87%;
    padding: 0 0px 0 0px;
-   margin: 0 0px 0 35px;
+   margin: 0 0px 16px 2px;
 }
+.contents span{
+   display: block;
+   color: #102830;
+   align-self: center;
+   margin-bottom: 0px;
+   background: #f37354;
+   padding: 3px;
+   border-radius: 8px 0px 8px 0px;
+   opacity: 0.8;
+ }
   .sliders{
     left: calc(18%/2);
   }
@@ -912,9 +938,10 @@ input[type="checkbox"]{
    justify-content: center;
    align-items: center;
    background: #ec6c4cf3;
-   width: 86vw;
+   min-width: 85vw;
    border-radius: 20px;
    padding: 10px;
+   margin: 15px;
 }
 .box-sub div{
    display: flex;
@@ -935,9 +962,9 @@ input[type="checkbox"]{
 .box-sub input{
    background: rgb(255 255 255);
    border: none;
-   width: 65vw;
+   min-width: 65vw;
    border-radius: 50px;
-   height: 10vh;
+   min-height: 7vh;
    margin-top: 25px;
    margin-bottom: 25px;
    padding-left: 15px;
@@ -952,3 +979,69 @@ input[type="checkbox"]{
    margin-top: 0px;
    border-radius: 50px;
    }
+   footer{
+      width: 100%;
+      position: relative;
+      left: 0%;
+      bottom: 0;
+      background:#fff;
+  }
+  footer .content-footer{
+      max-width: 1350px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  @media only screen and (max-width: 768px){
+   footer .content-footer{
+      flex-direction: column;
+  }
+}
+  footer .content-footer p,a{
+      color: #111;
+      text-decoration: none;
+  }
+  footer .content-footer .box{
+      transition: all 0.4s ease;
+  }
+  footer .content-footer .left{
+   padding-left: 20px;
+}
+  footer .content-footer .topic{
+      font-size: 18px;
+      font-weight: 600;
+      color: #f37354;
+      margin-bottom: 16px;
+  }
+  footer .content-footer p{
+      text-align: center;
+  }
+  footer .content-footer .lower{
+      padding: 5px;
+  }
+  footer .content-footer .lower .topic{
+      margin: 15px 0 5px 0;
+  }
+  footer .content-footer .lower i{
+      padding-right: 16px;
+  }
+  footer .content-footer .lower .Phone{
+      margin-bottom: 16px;
+  }
+  footer .content-footer .middle{
+      padding-left: 35px;
+  }
+  footer .content-footer .middle a{
+      line-height: 32px;
+  }
+  footer .content-footer .right{
+   padding-left: 35px;
+}
+  .bottom{
+   display: flex;
+   justify-content: center;
+   margin-bottom:30px ;
+   color: #8750b9;
+}
