@@ -160,7 +160,7 @@ a.actives{
 .flexbox{
    position: absolute;
    margin-top: 7px;
-   margin-left: 35px;
+   margin-left: 60px;
 }
 .search{
    position: absolute;
@@ -271,7 +271,7 @@ a:hover,a.active{
    position: absolute;
    margin-top: 10px;
    display: flex;
-   left: 50%;
+   left: 52%;
    margin-left: 0px;
    justify-content: center;
 }
