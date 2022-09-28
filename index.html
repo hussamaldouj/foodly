@@ -11,6 +11,7 @@
     <body>
 
         <div class="container">
+            <!-- start nav bar -->
             <nav>
                 <label class="logo">EFOODLY</label>
                 <span></span>
@@ -19,11 +20,12 @@
                 <input type="checkbox" name="side-hide-right" id="check">
                 <label for="check" class="checkbtn"><i class="fa far fas fa-bars"></i></label>
                 <ul>
-                    <li><a class="actives" href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Top Cities</a></li>
-                    <li><a href="#">Contract</a></li>
-                    <li><a class="active" href="#">Sign Up</a></li>
+                    <li><a class="actives" href="#info_home">Home</a></li>
+                    <li><a href="#category">Category</a></li>
+                    <li><a href="#Provide">About Us</a></li>
+                    <li><a href="#TopFood">Top Food</a></li>
+                    <li><a class="active" href="#App-contact">Application</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
                     <li><a href="#"><i class="fa fa-cart-shopping badget"></i></a></li>
                     <li class="flexbox">
                         <div class="search">
@@ -34,6 +36,8 @@
                     </li>
                 </ul>
             </nav>
+            <!-- End nav bar -->
+            <!-- start Container -->
             <div class="row" id="info_home">
                 <div class="col col-6">
                     <h1>Super Fast <span>Food</span> </h1>
@@ -51,6 +55,7 @@
                     <h1>Our Popular <span>Category</span></h1>
                 </div>
             </div>
+            <!-- start tab category-->
             <div class="row">
                 <div class="tabs">
                     <input type="radio" name="tab" id="tab-nav-1" checked>
@@ -414,6 +419,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end tab category-->            
             <div class="row" id="Provide">
                 <div class="col col-6">
                     <img src="/img/delivery.png">
@@ -433,6 +439,7 @@
                     <h1>Top Food <span>Restaurant</span></h1>
                 </div>
             </div>
+            <!-- start card hover-->
             <div class="row" id="TopFood">
                     <div class="container-food">
                         <div class="text">
@@ -483,7 +490,8 @@
                         <div class="img img-12"></div>
                     </div>
             </div>
-            <div class="row" id="Provide">
+            <!-- end card hover-->
+            <div class="row" id="App-contact">
                 <div class="col col-6">
                     <h1>Download Our <span>Mobile App</span></h1>
                     <p>It's all at your figertips --the Restaurant you love. Find the right food to suit your mood, and mke the first bite last,Go ahead, Download App and get 50% discount.</p>
@@ -494,7 +502,7 @@
                     <img src="/img/MobileDelivery.png">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="Blogs">
                 <div class="col-12">
                     <h2>What Our Client Are <span>Saying</span></h2>
                 </div>
@@ -555,6 +563,7 @@
                     </div>
                 </div>
             </div>
+            <!-- start footer-->
             <div class="row">
                 <footer>
                     <div class="content-footer">
@@ -605,6 +614,8 @@
                     </div>
                 </footer>
             </div>
+            <!-- end footer-->
+            <!-- end Container -->
         </div>
     </body>
 </html>
