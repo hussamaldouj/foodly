@@ -234,8 +234,10 @@ a.actives{
 ul{
    position: relative;
    width: 100%;
-   min-height: 50vh;
+   min-height: 450px;
    z-index: 999;
+   border-radius: 15px;
+   opacity: 0.9;
    background:#cccccc;
    top: 55px;
    left: -100%;
@@ -243,7 +245,8 @@ ul{
    text-align: center;
 }
 nav ul li{
-   display: block;
+   display: flex;
+   justify-content: center;
 }
 nav ul li a{
    font-size: 25px;
@@ -255,13 +258,15 @@ a:hover,a.active{
    color: #000;
 }
 #check:checked ~ ul{
-   left: 0;
+   left: 50%;
+   transform: translateX(-50%);
 }
 .flexbox{
-   position: relative;
+   position: absolute;
    margin-top: 10px;
    display: flex;
-   margin-left: 30px;
+   left: 50%;
+   margin-left: 0px;
    justify-content: center;
 }
 .search{
