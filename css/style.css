@@ -1069,4 +1069,24 @@ padding-left: 35px;
    margin-top: 0px;
    border-radius: 50px;
    }
+.btn-up{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   width: 50px;
+   height: 50px;
+   font-size: 2rem;
+   background: #000;
+   border-radius: 50px;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   transition: all 0.4s;
+}
+.btn-up i{
+   color: #f37354;
+}
+.btn:hover{
+   height: 80px;
+}
 /* end Container*/
