@@ -593,68 +593,68 @@ div.row{
    transition: 0.3s;
 }
 .img-1{
-   background: url("/img/blog-1.jpg") center / cover;
+   background: url("../img/blog-1.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-2{
-   background: url("/img/blog-1.jpg") center / cover;
+   background: url("../img/blog-1.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
 .img-3{
-   background: url("/img/blog-2.jpg") center / cover;
+   background: url("../img/blog-2.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-4{
-   background: url("/img/blog-2.jpg") center / cover;
+   background: url("../img/blog-2.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
 .img-5{
-   background: url("/img/blog-3.jpg") center / cover;
+   background: url("../img/blog-3.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-6{
-   background: url("/img/blog-3.jpg") center / cover;
+   background: url("../img/blog-3.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
 .img-7{
-   background: url("/img/blog-4.jpg") center / cover;
+   background: url("../img/blog-4.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-8{
-   background: url("/img/blog-4.jpg") center / cover;
+   background: url("../img/blog-4.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
 .img-9{
-   background: url("/img/blog-5.jpg") center / cover;
+   background: url("../img/blog-5.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-10{
-   background: url("/img/blog-5.jpg") center / cover;
+   background: url("../img/blog-5.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
 .img-11{
-   background: url("/img/blog-6.jpg") center / cover;
+   background: url("../img/blog-6.jpg") center / cover;
    z-index: -1;
    clip-path: polygon(50% 0 ,65% 50%,50% 100%,0% 100%,0% 50%,0 0);
    transform: translateX(101px);
 }
 .img-12{
-   background: url("/img/blog-6.jpg") center / cover;
+   background: url("../img/blog-6.jpg") center / cover;
    clip-path: polygon(100% 0 ,100% 50%,100% 100%,50% 100%,65% 50%,50% 0);
    transform: translateX(-100px);
 }
